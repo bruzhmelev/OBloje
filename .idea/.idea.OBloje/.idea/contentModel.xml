@@ -8,6 +8,10 @@
       <e p="appsettings.json" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="ClientApp" t="Include">
+        <e p="backendApi" t="Include">
+          <e p="Adapter.ts" t="Include" />
+          <e p="articleApi.ts" t="Include" />
+        </e>
         <e p="boot-client.tsx" t="Include" />
         <e p="boot-server.tsx" t="Include" />
         <e p="components" t="Include">
@@ -19,6 +23,9 @@
           <e p="Layout.tsx" t="Include" />
           <e p="NavMenu.tsx" t="Include" />
           <e p="NewArticle.tsx" t="Include" />
+          <e p="Primiteves" t="Include">
+            <e p="Input.tsx" t="Include" />
+          </e>
         </e>
         <e p="configureStore.ts" t="Include" />
         <e p="css" t="Include">

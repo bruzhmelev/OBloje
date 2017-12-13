@@ -8,32 +8,25 @@ namespace JustBlog.Controllers
     [Route("api/[controller]")]
     public class ArticleController : Controller
     {
-        private static Article[] Fixtures = new Article[]
+        private static List<Article> Fixtures = new List<Article>
         {
-            new Article(){ Id = 1,  Title = "Первый нах!", CreateDateTime = new DateTime(2017, 12, 1), Text = "Что-то текстовое тут должно быть, хз что ааааа"}, 
-            new Article(){ Id = 2,  Title = "Второй нах!", CreateDateTime = new DateTime(2017, 12, 2), Text = "Что-то текстовое тут должно быть, хз что ааааа"}, 
-            new Article(){ Id = 3,  Title = "Третий нах!", CreateDateTime = new DateTime(2017, 12, 3), Text = "Что-то текстовое тут должно быть, хз что ааааа"}, 
+            new Article(){ Id = Guid.NewGuid(),  Title = "Первый нах!", CreateDateTime = new DateTime(2017, 12, 1), Text = "Что-то текстовое тут должно быть, хз что ааааа"}, 
+            new Article(){ Id = Guid.NewGuid(),  Title = "Второй нах!", CreateDateTime = new DateTime(2017, 12, 2), Text = "Что-то текстовое тут должно быть, хз что ааааа"}, 
+            new Article(){ Id = Guid.NewGuid(),  Title = "Третий нах!", CreateDateTime = new DateTime(2017, 12, 3), Text = "Что-то текстовое тут должно быть, хз что ааааа"}, 
         };
 
-        [HttpGet("[action]")]
+        [HttpGet]
         public IEnumerable<Article> Article()
         {
             return Fixtures.AsEnumerable();
         }
-
-        public class WeatherForecast
+        
+        [HttpPost]
+        public Object PostArticle(Article article)
         {
-            public string DateFormatted { get; set; }
-            public int TemperatureC { get; set; }
-            public string Summary { get; set; }
-
-            public int TemperatureF
-            {
-                get
-                {
-                    return 32 + (int)(TemperatureC / 0.5556);
-                }
-            }
+            article.Id = Guid.NewGuid();
+            Fixtures.Add(article);
+            return article;
         }
     }
 
@@ -41,7 +34,7 @@ namespace JustBlog.Controllers
     {
         public string Text { get; set; }
         public string Title { get; set; }
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public DateTime CreateDateTime { get; set; }
     }
 }

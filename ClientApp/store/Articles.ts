@@ -1,6 +1,7 @@
 import { fetch, addTask } from 'domain-task';
 import { Action, Reducer, ActionCreator } from 'redux';
 import { AppThunkAction } from './';
+import {ArticleApi} from "../backendApi/ArticleApi";
 
 // -----------------
 // STATE - This defines the type of data maintained in the Redux store.
@@ -12,11 +13,22 @@ export interface ArticlesState {
     newArticle: Article | null;
 }
 
-export interface Article {
+export class Article {
     id: number;
     title: string;
     text: string;
-    createDateTime: Date;
+    createDateTime: Date | null;
+
+    constructor(
+                title: string,
+                text: string,
+                id: number = 0,
+                ) {
+        this.id = id;
+        this.title = title;
+        this.text = text;
+        this.createDateTime = new Date();
+    }
 }
 
 
@@ -30,18 +42,23 @@ interface RequestArticlesAction {
     type: 'REQUEST_ARTICLES__START';
 }
 
-interface AddNewArticleAction {
-    type: 'ADD_NEW_ARTICLE__START';
-}
-
 interface RequestArticlesActionSuccess {
     type: 'REQUEST_ARTICLES__SUCCESS';
     articles: Article[];
 }
 
+interface AddNewArticleAction {
+    type: 'ADD_NEW_ARTICLE__START';
+}
+
+interface AddNewArticleActionSuccess {
+    type: 'ADD_NEW_ARTICLE__SUCCESS';
+    article: Article;
+}
+
 // Declare a 'discriminated union' type. This guarantees that all references to 'type' properties contain one of the
 // declared type strings (and not any other arbitrary string).
-type KnownAction = RequestArticlesAction | RequestArticlesActionSuccess;
+type KnownAction = RequestArticlesAction | RequestArticlesActionSuccess | AddNewArticleAction | AddNewArticleActionSuccess;
 
 // ----------------
 // ACTION CREATORS - These are functions exposed to UI components that will trigger a state transition.
@@ -52,17 +69,27 @@ export const actionCreators = {
         // Only load data if it's something we don't already have (and are not already loading)
         
         if (!getState().articles.isLoaded) {
-            let fetchTask = fetch(`api/Article/Article`)
+            let fetchTask = fetch(`api/Article`)
                 .then(response => response.json() as Promise<Article[]>)
                 .then(data => {
                     dispatch({ type: 'REQUEST_ARTICLES__SUCCESS', articles: data });
                 });
-
+            
             addTask(fetchTask); // Ensure server-side prerendering waits for this to complete
             dispatch({ type: 'REQUEST_ARTICLES__START' });
         }
     },
-    addNewArticle: () => <AddNewArticleAction>{ type: 'ADD_NEW_ARTICLE__START' },
+    addNewArticle: (article: Article): AppThunkAction<KnownAction> => (dispatch, getState) => {
+        debugger;
+        let addArticleTask = ArticleApi.addArticle(article)
+            .then(response => response as Promise<Article>)
+            .then(data => {
+                dispatch({ type: 'ADD_NEW_ARTICLE__SUCCESS', article: data });
+            });
+
+        addTask(addArticleTask); // Ensure server-side prerendering waits for this to complete
+        dispatch({ type: 'ADD_NEW_ARTICLE__START' });
+    },
 };
 
 // ----------------
@@ -89,6 +116,10 @@ export const reducer: Reducer<ArticlesState> = (state: ArticlesState, incomingAc
                 isLoaded: true,
                 newArticle: state.newArticle
             };
+        case 'ADD_NEW_ARTICLE__START':
+        case 'ADD_NEW_ARTICLE__SUCCESS':
+            //TODO: Реагируем 
+            return state;
         default:
             // The following line guarantees that every action in the KnownAction union has been covered by a case above
             const exhaustiveCheck: never = action;
