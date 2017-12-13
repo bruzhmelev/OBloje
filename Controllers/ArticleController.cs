@@ -25,6 +25,7 @@ namespace JustBlog.Controllers
         public Object PostArticle(Article article)
         {
             article.Id = Guid.NewGuid();
+            article.CreateDateTime = DateTime.UtcNow;
             Fixtures.Add(article);
             return article;
         }

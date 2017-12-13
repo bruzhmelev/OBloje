@@ -27,7 +27,6 @@ export class Article {
         this.id = id;
         this.title = title;
         this.text = text;
-        this.createDateTime = new Date();
     }
 }
 
@@ -80,7 +79,6 @@ export const actionCreators = {
         }
     },
     addNewArticle: (article: Article): AppThunkAction<KnownAction> => (dispatch, getState) => {
-        debugger;
         let addArticleTask = ArticleApi.addArticle(article)
             .then(response => response as Promise<Article>)
             .then(data => {
@@ -119,7 +117,7 @@ export const reducer: Reducer<ArticlesState> = (state: ArticlesState, incomingAc
         case 'ADD_NEW_ARTICLE__START':
         case 'ADD_NEW_ARTICLE__SUCCESS':
             //TODO: Реагируем 
-            return state;
+            return  state = {...state,  isLoading: false, isLoaded: false};
         default:
             // The following line guarantees that every action in the KnownAction union has been covered by a case above
             const exhaustiveCheck: never = action;

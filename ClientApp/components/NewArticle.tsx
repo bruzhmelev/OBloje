@@ -9,8 +9,7 @@ import Input from "./Primiteves/Input";
 
 // At runtime, Redux will merge together...
 type NewArticleProps =
-    ArticlesState.ArticlesState        // ... state we've requested from the Redux store
-    & typeof ArticlesState.actionCreators;      // ... plus action creators we've requested
+typeof ArticlesState.actionCreators;      // ... plus action creators we've requested
 
 class NewArticle extends React.Component<NewArticleProps, {}> {
 
@@ -24,10 +23,10 @@ class NewArticle extends React.Component<NewArticleProps, {}> {
             <div>
                 <h1>Новая статья</h1>
                 <label> Название:
-                    <input type='text' onChange={this.handleTitleChange}/>
+                    <input type='text' value={this.state.title} onChange={this.handleTitleChange}/>
                 </label>
                 <label> Текст:
-                    <textarea rows={40} cols={90} onChange={this.handleTextChange}/>
+                    <textarea rows={40} cols={90} value={this.state.text} onChange={this.handleTextChange}/>
                 </label>
                 <button onClick={this.handleSave}>Save</button>
             </div>
@@ -38,6 +37,7 @@ class NewArticle extends React.Component<NewArticleProps, {}> {
         this.props.addNewArticle(
             new Article(this.state.title, this.state.text)
         );
+        this.setState({title: "", text: ""})
     }
 
     private handleTitleChange = (ev:any) =>{
@@ -50,7 +50,6 @@ class NewArticle extends React.Component<NewArticleProps, {}> {
     }
 }
 
-export default connect(
-    (state: ApplicationState) => state.articles, // Selects which state properties are merged into the component's props
+export default connect(null, // Selects which state properties are merged into the component's props
     ArticlesState.actionCreators                  // Selects which action creators are merged into the component's props
 )(NewArticle) as any; //as typeof NewArticle;

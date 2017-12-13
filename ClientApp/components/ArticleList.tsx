@@ -15,7 +15,6 @@ class ArticleList extends React.Component<ArticleListProps, {}> {
     componentWillMount() {
         this.props.requestArticles();
     }
-    
 
     public render() {
         return (
