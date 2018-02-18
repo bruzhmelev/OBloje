@@ -3,6 +3,8 @@ import { Link, RouteComponentProps } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { ApplicationState }  from '../store';
 import * as ArticlesState from '../store/Articles';
+import { Highlight } from 'react-highlight';
+// var Highlight = require('react-highlight');
 
 
 // At runtime, Redux will merge together...
@@ -32,6 +34,7 @@ class ArticleList extends React.Component<ArticleListProps, {}> {
                 <h2>{a.title} </h2>
                 <p>{a.createDateTime} </p>
                 <p>{a.text} </p>
+                <Highlight className='js'>{"var test = 'hello'"}</Highlight>
             </div>
         ));
     }

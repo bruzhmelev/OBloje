@@ -50,6 +50,7 @@ class NewArticle extends React.Component<NewArticleProps, {}> {
     }
 }
 
-export default connect(null, // Selects which state properties are merged into the component's props
+export default connect(
+    null, // Selects which state properties are merged into the component's props
     ArticlesState.actionCreators                  // Selects which action creators are merged into the component's props
 )(NewArticle) as any; //as typeof NewArticle;

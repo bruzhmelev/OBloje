@@ -17,6 +17,7 @@
         <e p="components" t="Include">
           <e p="Admin.tsx" t="Include" />
           <e p="ArticleList.tsx" t="Include" />
+          <e p="CodeSnippet.tsx" t="Include" />
           <e p="Counter.tsx" t="Include" />
           <e p="FetchData.tsx" t="Include" />
           <e p="Home.tsx" t="Include" />
@@ -34,7 +35,6 @@
         <e p="dist" t="Include">
           <e p="89889688147bd7575d6327160d64e760.svg" t="Include" />
           <e p="main-server.js" t="Include" />
-          <e p="vendor-manifest.json" t="Include" />
           <e p="vendor.js" t="Include" />
         </e>
         <e p="routes.tsx" t="Include" />
@@ -43,6 +43,11 @@
           <e p="Counter.ts" t="Include" />
           <e p="index.ts" t="Include" />
           <e p="WeatherForecasts.ts" t="Include" />
+        </e>
+        <e p="types" t="Include">
+          <e p="react-highlight" t="Include">
+            <e p="index.d.ts" t="Include" />
+          </e>
         </e>
       </e>
       <e p="Controllers" t="Include">
