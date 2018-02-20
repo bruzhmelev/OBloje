@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c12c501f-e23b-4d17-a3cc-ec40bde0d0cd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.OBloje/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.OBloje/.idea/contentModel.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.OBloje/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.OBloje/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientApp/components/ArticleList.tsx" afterPath="$PROJECT_DIR$/ClientApp/components/ArticleList.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientApp/components/NewArticle.tsx" afterPath="$PROJECT_DIR$/ClientApp/components/NewArticle.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/npm-shrinkwrap.json" afterPath="$PROJECT_DIR$/npm-shrinkwrap.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Articles.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Articles.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ClientApp/store/Articles.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="310">
@@ -33,7 +29,7 @@
       <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ClientApp/store/index.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="391">
               <caret line="23" column="74" lean-forward="false" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="74" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
@@ -105,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.d.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41888">
+            <state relative-caret-position="17">
               <caret line="2478" column="40" lean-forward="false" selection-start-line="2478" selection-start-column="14" selection-end-line="2478" selection-end-column="40" />
               <folding />
             </state>
@@ -122,9 +118,9 @@
               <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
-                <marker date="1518967215124" expanded="true" signature="1287:1307" ph="&lt;div/&gt;" />
-                <marker date="1518967215124" expanded="true" signature="1287:1325" ph="{...}" />
-                <marker date="1518967215124" expanded="true" signature="1287:1327" ph="{...}" />
+                <marker date="1519156459406" expanded="true" signature="1282:1302" ph="&lt;div/&gt;" />
+                <marker date="1519156459406" expanded="true" signature="1282:1320" ph="{...}" />
+                <marker date="1519156459406" expanded="true" signature="1282:1322" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -268,12 +264,12 @@
       <updated>1513098862206</updated>
       <workItem from="1513098868009" duration="16619000" />
       <workItem from="1514306622766" duration="1440000" />
-      <workItem from="1518963499693" duration="1729000" />
+      <workItem from="1518963499693" duration="2294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19788000" />
+    <option name="totallyTimeSpent" value="20353000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -286,6 +282,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -300,7 +297,7 @@
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3408037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25326172" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25326172" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -403,9 +400,9 @@
           <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1518967215124" expanded="true" signature="1287:1307" ph="&lt;div/&gt;" />
-            <marker date="1518967215124" expanded="true" signature="1287:1325" ph="{...}" />
-            <marker date="1518967215124" expanded="true" signature="1287:1327" ph="{...}" />
+            <marker date="1519156459406" expanded="true" signature="1282:1302" ph="&lt;div/&gt;" />
+            <marker date="1519156459406" expanded="true" signature="1282:1320" ph="{...}" />
+            <marker date="1519156459406" expanded="true" signature="1282:1322" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -468,7 +465,7 @@
         <state relative-caret-position="34">
           <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="23" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -493,9 +490,9 @@
           <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1518967215124" expanded="true" signature="1287:1307" ph="&lt;div/&gt;" />
-            <marker date="1518967215124" expanded="true" signature="1287:1325" ph="{...}" />
-            <marker date="1518967215124" expanded="true" signature="1287:1327" ph="{...}" />
+            <marker date="1519156459406" expanded="true" signature="1282:1302" ph="&lt;div/&gt;" />
+            <marker date="1519156459406" expanded="true" signature="1282:1320" ph="{...}" />
+            <marker date="1519156459406" expanded="true" signature="1282:1322" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -582,16 +579,8 @@
         <state relative-caret-position="34">
           <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="23" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41888">
-          <caret line="2478" column="40" lean-forward="false" selection-start-line="2478" selection-start-column="14" selection-end-line="2478" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,9 +600,9 @@
           <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1518967215124" expanded="true" signature="1287:1307" ph="&lt;div/&gt;" />
-            <marker date="1518967215124" expanded="true" signature="1287:1325" ph="{...}" />
-            <marker date="1518967215124" expanded="true" signature="1287:1327" ph="{...}" />
+            <marker date="1519156459406" expanded="true" signature="1282:1302" ph="&lt;div/&gt;" />
+            <marker date="1519156459406" expanded="true" signature="1282:1320" ph="{...}" />
+            <marker date="1519156459406" expanded="true" signature="1282:1322" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -660,16 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClientApp/store/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="74" lean-forward="false" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ClientApp/store/Articles.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
@@ -684,6 +663,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClientApp/store/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="74" lean-forward="false" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/react/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="2478" column="40" lean-forward="false" selection-start-line="2478" selection-start-column="14" selection-end-line="2478" selection-end-column="40" />
           <folding />
         </state>
       </provider>
