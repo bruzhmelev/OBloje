@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c12c501f-e23b-4d17-a3cc-ec40bde0d0cd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.OBloje/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.OBloje/.idea/contentModel.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.OBloje/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.OBloje/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientApp/boot-client.tsx" afterPath="$PROJECT_DIR$/ClientApp/boot-client.tsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ClientApp/components/ArticleList.tsx" afterPath="$PROJECT_DIR$/ClientApp/components/ArticleList.tsx" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,7 +20,7 @@
         <entry file="file://$PROJECT_DIR$/ClientApp/store/Articles.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="310">
-              <caret line="79" column="6" lean-forward="true" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
+              <caret line="79" column="6" lean-forward="false" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -115,12 +117,12 @@
         <entry file="file://$PROJECT_DIR$/ClientApp/components/ArticleList.tsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+              <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
-                <marker date="1519156459406" expanded="true" signature="1282:1302" ph="&lt;div/&gt;" />
-                <marker date="1519156459406" expanded="true" signature="1282:1320" ph="{...}" />
-                <marker date="1519156459406" expanded="true" signature="1282:1322" ph="{...}" />
+                <marker date="1519158155166" expanded="true" signature="2396:2416" ph="&lt;div/&gt;" />
+                <marker date="1519158155166" expanded="true" signature="2396:2434" ph="{...}" />
+                <marker date="1519158155166" expanded="true" signature="2396:2436" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -144,6 +146,7 @@
     <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controllers/SampleDataController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -264,12 +267,12 @@
       <updated>1513098862206</updated>
       <workItem from="1513098868009" duration="16619000" />
       <workItem from="1514306622766" duration="1440000" />
-      <workItem from="1518963499693" duration="2294000" />
+      <workItem from="1518963499693" duration="3054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20353000" />
+    <option name="totallyTimeSpent" value="21113000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -400,9 +403,9 @@
           <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1519156459406" expanded="true" signature="1282:1302" ph="&lt;div/&gt;" />
-            <marker date="1519156459406" expanded="true" signature="1282:1320" ph="{...}" />
-            <marker date="1519156459406" expanded="true" signature="1282:1322" ph="{...}" />
+            <marker date="1519158155166" expanded="true" signature="2396:2416" ph="&lt;div/&gt;" />
+            <marker date="1519158155166" expanded="true" signature="2396:2434" ph="{...}" />
+            <marker date="1519158155166" expanded="true" signature="2396:2436" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -490,9 +493,9 @@
           <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1519156459406" expanded="true" signature="1282:1302" ph="&lt;div/&gt;" />
-            <marker date="1519156459406" expanded="true" signature="1282:1320" ph="{...}" />
-            <marker date="1519156459406" expanded="true" signature="1282:1322" ph="{...}" />
+            <marker date="1519158155166" expanded="true" signature="2396:2416" ph="&lt;div/&gt;" />
+            <marker date="1519158155166" expanded="true" signature="2396:2434" ph="{...}" />
+            <marker date="1519158155166" expanded="true" signature="2396:2436" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -597,12 +600,12 @@
     <entry file="file://$PROJECT_DIR$/ClientApp/components/ArticleList.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <caret line="20" column="16" lean-forward="false" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
-            <marker date="1519156459406" expanded="true" signature="1282:1302" ph="&lt;div/&gt;" />
-            <marker date="1519156459406" expanded="true" signature="1282:1320" ph="{...}" />
-            <marker date="1519156459406" expanded="true" signature="1282:1322" ph="{...}" />
+            <marker date="1519158155166" expanded="true" signature="2396:2416" ph="&lt;div/&gt;" />
+            <marker date="1519158155166" expanded="true" signature="2396:2434" ph="{...}" />
+            <marker date="1519158155166" expanded="true" signature="2396:2436" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -652,7 +655,7 @@
     <entry file="file://$PROJECT_DIR$/ClientApp/store/Articles.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="310">
-          <caret line="79" column="6" lean-forward="true" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
+          <caret line="79" column="6" lean-forward="false" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>

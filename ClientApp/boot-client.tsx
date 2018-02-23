@@ -1,4 +1,5 @@
 import './css/site.css';
+import '../node_modules/highlight.js/styles/monokai-sublime.css'
 import 'bootstrap';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
