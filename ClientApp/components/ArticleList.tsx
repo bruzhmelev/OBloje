@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { ApplicationState }  from '../store';
 import * as ArticlesState from '../store/Articles';
 import Highlight from 'react-highlight';
+import { DateOfCreation } from './DateOfCreation/DateOfCreation';
 
 // At runtime, Redux will merge together...
 type ArticleListProps =
@@ -27,40 +28,45 @@ class ArticleList extends React.Component<ArticleListProps, {}> {
     }
     
     private renderArticles() {
-        return this.props.articles.map(a => (
+        return this.props.articles.map(a => {
+            const date = a.createDateTime && a.createDateTime.toString()
+
+            return (
             <div key={a.id}>
-                <h2>{a.title} </h2>
-                <p>{a.createDateTime} </p>
+                <h2>{a.title}</h2>
+                <DateOfCreation date={a.createDateTime} />
                 <p>{a.text} </p>
-                <Highlight className='js'>{`    
-    const clientBundleConfig = merge(sharedConfig(), {
-        entry: { 'main-client': './ClientApp/boot-client.tsx' },
-        module: {
-            rules: [
-                { test: /\.css$/, use: ExtractTextPlugin.extract({ use: isDevBuild ? 'css-loader' : 'css-loader?minimize' }) }
-            ]
-        },
-        output: { path: path.join(__dirname, clientBundleOutputDir) },
-        plugins: [
-            new ExtractTextPlugin('site.css'),
-            new webpack.DllReferencePlugin({
-                context: __dirname,
-                manifest: require('./wwwroot/dist/vendor-manifest.json')
-            })
-        ].concat(isDevBuild ? [
-            // Plugins that apply in development builds only
-            new webpack.SourceMapDevToolPlugin({
-                filename: '[file].map', // Remove this line if you prefer inline source maps
-                moduleFilenameTemplate: path.relative(clientBundleOutputDir, '[resourcePath]') // Point sourcemap entries to the original file locations on disk
-            })
-        ] : [
-            // Plugins that apply in production builds only
-            new webpack.optimize.UglifyJsPlugin()
-        ])
-    });
-    `}</Highlight>
+                <Highlight className='js'>{
+`   
+const clientBundleConfig = merge(sharedConfig(), {
+    entry: { 'main-client': './ClientApp/boot-client.tsx' },
+    module: {
+        rules: [
+            { test: /\.css$/, use: ExtractTextPlugin.extract({ use: isDevBuild ? 'css-loader' : 'css-loader?minimize' }) }
+        ]
+    },
+    output: { path: path.join(__dirname, clientBundleOutputDir) },
+    plugins: [
+        new ExtractTextPlugin('site.css'),
+        new webpack.DllReferencePlugin({
+            context: __dirname,
+            manifest: require('./wwwroot/dist/vendor-manifest.json')
+        })
+    ].concat(isDevBuild ? [
+        // Plugins that apply in development builds only
+        new webpack.SourceMapDevToolPlugin({
+            filename: '[file].map', // Remove this line if you prefer inline source maps
+            moduleFilenameTemplate: path.relative(clientBundleOutputDir, '[resourcePath]') // Point sourcemap entries to the original file locations on disk
+        })
+    ] : [
+        // Plugins that apply in production builds only
+        new webpack.optimize.UglifyJsPlugin()
+    ])
+});
+`
+                }</Highlight>
             </div>
-        ));
+        )});
     }
 }
 
