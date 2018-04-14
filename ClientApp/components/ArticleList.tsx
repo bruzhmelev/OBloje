@@ -21,7 +21,7 @@ class ArticleList extends React.Component<ArticleListProps, {}> {
         return (
             <div>
                 <h1>Статьи</h1>
-                <p>Я сделяль...</p>
+                <p>[Описание вообщем про статьи и.т.п]</p>
                 { this.renderArticles() }
             </div>
         ); 
